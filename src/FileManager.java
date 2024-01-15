@@ -79,6 +79,9 @@ public class FileManager {
                     System.out.println("Invalid command. Usage: movefile <source_file> <destination_file>");
                 }
                 break;
+            case "editfile":
+                EditFileCommand.editFile(argument);
+                break;
             case "changepath":
                 ChangePathCommand.changePath();
                 break;
@@ -97,6 +100,7 @@ public class FileManager {
         System.out.println("help");
         System.out.println("copyfile <source_file> <destination_file>");
         System.out.println("movefile <source_file> <destination_file>");
+        System.out.println("editfile <file_name>");
         System.out.println("Type 'exit' to exit the File Manager.");
     }
 }
