@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="845ddeec-c9cc-4a37-9bb4-cc962cc00c22" name="Changes" comment="copy feature added" />
+    <list default="true" id="845ddeec-c9cc-4a37-9bb4-cc962cc00c22" name="Changes" comment="Move Feature Added" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,11 +18,6 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -38,30 +33,20 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.FileManager.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "lamia",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/SPL_1",
+    "git-widget-placeholder": "Abid",
+    "last_opened_file_path": "D:/SPL_1",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "D:/Codes/learn java/SPL/src/Main.java",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-21.0.1-openjdk-21.0.1-f644763e9732-f98dd351" />
-      </set>
-    </attachedChunks>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -73,26 +58,16 @@
       <workItem from="1705331050892" duration="276000" />
       <workItem from="1705331364156" duration="42000" />
       <workItem from="1705331634138" duration="539000" />
-      <workItem from="1705333623205" duration="486000" />
-      <workItem from="1705334133107" duration="1231000" />
     </task>
-    <task id="LOCAL-00001" summary="help feature added">
+    <task id="LOCAL-00001" summary="Move Feature Added">
       <option name="closed" value="true" />
-      <created>1705334288543</created>
+      <created>1705335307456</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1705334288544</updated>
+      <updated>1705335307456</updated>
     </task>
-    <task id="LOCAL-00002" summary="copy feature added">
-      <option name="closed" value="true" />
-      <created>1705334748953</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1705334748953</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,9 +85,9 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="help feature added" />
-    <MESSAGE value="copy feature added" />
-    <option name="LAST_COMMIT_MESSAGE" value="copy feature added" />
+    <MESSAGE value="workspace" />
+    <MESSAGE value="Move Feature Added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Move Feature Added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
