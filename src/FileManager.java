@@ -48,6 +48,14 @@ public class FileManager {
             case "deletedirectory":
                 DeleteCommand.deleteDirectory(argument);
                 break;
+            case "renamefile":
+                String[] parts = argument.split(" ", 2);
+                if (parts.length == 2) {
+                    RenameFileCommand.renameFile(parts[0], parts[1]);
+                } else {
+                    System.out.println("Invalid command. Usage: renamefile <old_file_name> <new_file_name>");
+                }
+                break;
 
 
             case "showcurrentpath":
