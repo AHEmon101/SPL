@@ -56,7 +56,14 @@ public class FileManager {
                     System.out.println("Invalid command. Usage: renamefile <old_file_name> <new_file_name>");
                 }
                 break;
-
+            case "copyfile":
+                String[] copyParts = argument.split(" ", 2);
+                if (copyParts.length == 2) {
+                    CopyCommand.copyFile(copyParts[0], copyParts[1]);
+                } else {
+                    System.out.println("Invalid command. Usage: copyfile <source_file> <destination_file>");
+                }
+                break;
 
             case "showcurrentpath":
                 ShowCurrentPathCommand.showCurrentPath();
