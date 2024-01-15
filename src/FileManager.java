@@ -71,6 +71,14 @@ public class FileManager {
             case "help":
                 displayHelp();
                 break;
+            case "movefile":
+                String[] moveParts = argument.split(" ", 2);
+                if (moveParts.length == 2) {
+                    MoveFileCommand.moveFile(moveParts[0], moveParts[1]);
+                } else {
+                    System.out.println("Invalid command. Usage: movefile <source_file> <destination_file>");
+                }
+                break;
             case "changepath":
                 ChangePathCommand.changePath();
                 break;
@@ -87,6 +95,8 @@ public class FileManager {
         System.out.println("showcurrentpath - Show current working directory");
         System.out.println("changepath <path> - Change current working directory to absolute path");
         System.out.println("help");
+        System.out.println("copyfile <source_file> <destination_file>");
+        System.out.println("movefile <source_file> <destination_file>");
         System.out.println("Type 'exit' to exit the File Manager.");
     }
 }
