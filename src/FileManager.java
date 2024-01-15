@@ -48,13 +48,36 @@ public class FileManager {
             case "deletedirectory":
                 DeleteCommand.deleteDirectory(argument);
                 break;
-
+            case "renamefile":
+                String[] parts = argument.split(" ", 2);
+                if (parts.length == 2) {
+                    RenameFileCommand.renameFile(parts[0], parts[1]);
+                } else {
+                    System.out.println("Invalid command. Usage: renamefile <old_file_name> <new_file_name>");
+                }
+                break;
+            case "copyfile":
+                String[] copyParts = argument.split(" ", 2);
+                if (copyParts.length == 2) {
+                    CopyCommand.copyFile(copyParts[0], copyParts[1]);
+                } else {
+                    System.out.println("Invalid command. Usage: copyfile <source_file> <destination_file>");
+                }
+                break;
 
             case "showcurrentpath":
                 ShowCurrentPathCommand.showCurrentPath();
                 break;
             case "help":
                 displayHelp();
+                break;
+            case "movefile":
+                String[] moveParts = argument.split(" ", 2);
+                if (moveParts.length == 2) {
+                    MoveFileCommand.moveFile(moveParts[0], moveParts[1]);
+                } else {
+                    System.out.println("Invalid command. Usage: movefile <source_file> <destination_file>");
+                }
                 break;
             case "changepath":
                 ChangePathCommand.changePath();
@@ -72,6 +95,8 @@ public class FileManager {
         System.out.println("showcurrentpath - Show current working directory");
         System.out.println("changepath <path> - Change current working directory to absolute path");
         System.out.println("help");
+        System.out.println("copyfile <source_file> <destination_file>");
+        System.out.println("movefile <source_file> <destination_file>");
         System.out.println("Type 'exit' to exit the File Manager.");
     }
 }
