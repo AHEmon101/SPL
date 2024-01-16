@@ -41,7 +41,9 @@ public class FileManager {
             case "createfile":
                 CreateFileCommand.createFile(argument);
                 break;
-
+            case "createdirectory":
+                CreateDirectoryCommand.createDirectory(argument);
+                break;
             case "deletefile":
                 DeleteCommand.deleteFile(argument);
                 break;
@@ -93,6 +95,7 @@ public class FileManager {
     private static void displayHelp() {
         System.out.println("Available commands:");
         System.out.println("createfile <file_name>");
+        System.out.println("createdirectory <directory_name>");
         System.out.println("deletefile <file_name>");
         System.out.println("renamefile <old_file_name> <new_file_name>");
         System.out.println("showcurrentpath - Show current working directory");
