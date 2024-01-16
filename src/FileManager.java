@@ -94,6 +94,15 @@ public class FileManager {
                     System.out.println("Invalid command. Usage: filterfiles <directory> <file_extension>");
                 }
                 break;
+            case "searchfiles":
+                String[] searchParts = argument.split(" ", 2);
+                String query = searchParts.length > 1 ? searchParts[1] : "";
+                List<String> foundFiles = SearchCommand.searchFiles(searchParts[0], query);
+                System.out.println("Found files:");
+                for (String foundFile : foundFiles) {
+                    System.out.println(foundFile);
+                }
+                break;
             case "listcontents":
                 ListContentsCommand.listContents(argument);
                 break;
@@ -116,6 +125,7 @@ public class FileManager {
         System.out.println("4. createdirectory <directory_name>");
         System.out.println("5. deletefile <file_name>");
         System.out.println("6. deletedirectory <directory_name>");
+        System.out.println("searchfiles <directory> [query]");
         System.out.println("7. renamefile <old_file_name> <new_file_name>");
         System.out.println("8. movefile <source_file> <destination_file>");
         System.out.println("9. copyfile <source_file> <destination_file>");
