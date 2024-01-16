@@ -79,6 +79,9 @@ public class FileManager {
                     System.out.println("Invalid command. Usage: movefile <source_file> <destination_file>");
                 }
                 break;
+            case "listcontents":
+                ListContentsCommand.listContents(argument);
+                break;
             case "editfile":
                 EditFileCommand.editFile(argument);
                 break;
@@ -98,6 +101,7 @@ public class FileManager {
         System.out.println("showcurrentpath - Show current working directory");
         System.out.println("changepath <path> - Change current working directory to absolute path");
         System.out.println("help");
+        System.out.println("listcontents <directory>");
         System.out.println("copyfile <source_file> <destination_file>");
         System.out.println("movefile <source_file> <destination_file>");
         System.out.println("editfile <file_name>");
