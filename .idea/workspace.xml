@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="845ddeec-c9cc-4a37-9bb4-cc962cc00c22" name="Changes" comment="ListContentsCommand added">
-      <change beforePath="$PROJECT_DIR$/src/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HelpCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HelpCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ViewFileCommand.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +40,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "Abid",
+    "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "D:/SPL_1",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
