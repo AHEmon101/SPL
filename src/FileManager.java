@@ -94,6 +94,9 @@ public class FileManager {
                     System.out.println("Invalid command. Usage: filterfiles <directory> <file_extension>");
                 }
                 break;
+            case "sortfiles":
+                SortCommand.sortFiles(argument);
+                break;
             case "searchfiles":
                 String[] searchParts = argument.split(" ", 2);
                 String query = searchParts.length > 1 ? searchParts[1] : "";
