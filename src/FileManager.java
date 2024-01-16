@@ -1,4 +1,5 @@
 
+import java.util.List;
 import java.util.Scanner;
 
 
@@ -79,6 +80,21 @@ public class FileManager {
                     System.out.println("Invalid command. Usage: movefile <source_file> <destination_file>");
                 }
                 break;
+            case "filterfiles":
+                String[] filterParts = argument.split(" ", 2);
+                if (filterParts.length == 2) {
+                    List<String> filteredFiles = FilterCommand.filterFiles(filterParts[0], filterParts[1]);
+                    System.out.println("Filtered files:");
+                    for (String filteredFile : filteredFiles) {
+                        System.out.println(filteredFile);
+                    }
+                } else {
+                    System.out.println("Invalid command. Usage: filterfiles <directory> <file_extension>");
+                }
+                break;
+            case "listcontents":
+                ListContentsCommand.listContents(argument);
+                break;
             case "editfile":
                 EditFileCommand.editFile(argument);
                 break;
@@ -98,6 +114,9 @@ public class FileManager {
         System.out.println("showcurrentpath - Show current working directory");
         System.out.println("changepath <path> - Change current working directory to absolute path");
         System.out.println("help");
+        System.out.println("filterfiles <directory> <file_extension>");
+
+        System.out.println("listcontents <directory>");
         System.out.println("copyfile <source_file> <destination_file>");
         System.out.println("movefile <source_file> <destination_file>");
         System.out.println("editfile <file_name>");
